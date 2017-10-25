@@ -8,7 +8,6 @@
 	*	@License	Berkeley Software Distribution License (BSD-License 2) http://www.opensource.org/licenses/bsd-license.php
 	*/
 
-	namespace VPNCash;
 
 	class Client
 	{
@@ -32,7 +31,7 @@
 			curl_setopt($request, CURLOPT_HEADER, false);
 			$result = curl_exec($request);
 			if ($result == FALSE) {
-				throw new VPNCash\Exception('<p>Curl failed: '.curl_error($request).'</p>');
+				throw new Exception('<p>Curl failed: '.curl_error($request).'</p>');
 			}
 			// Close connection
 			curl_close($request);
