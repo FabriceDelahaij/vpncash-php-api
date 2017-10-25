@@ -1,5 +1,4 @@
 # VPNCash PHP API Client
-
 [![Build Status](https://scrutinizer-ci.com/g/FabriceDelahaij/vpncash-php-api/badges/build.png?b=master)](https://scrutinizer-ci.com/g/FabriceDelahaij/vpncash-php-api/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/FabriceDelahaij/vpncash-php-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/FabriceDelahaij/vpncash-php-api/?branch=master)
 [![StyleCI](https://styleci.io/repos/108218190/shield?branch=master)](https://styleci.io/repos/108218190)
@@ -72,8 +71,7 @@ echo $api->changeAccountPassword($data);
 If you wish to learn more about our API, please visit the [API Documentation](http://docs.vpnapi21.apiary.io).
 
 ## License ##
-
 [BSD (Berkeley Software Distribution) License](https://opensource.org/licenses/bsd-license.php). Copyright (c) 2017, Extreemhost.
 
 ## Support ##
- Contact: [www.extreemhost.nl](https://extreemhost.nl) ? info@extreemhost ? +31 316-23 40 40
+Contact: [www.extreemhost.nl](https://extreemhost.nl) - info@extreemhost - +31 316-23 40 40
