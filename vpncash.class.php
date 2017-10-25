@@ -39,6 +39,10 @@
 			print $result;
 		}
 
+		public function checkUsername($data) {
+			$this->request($data, 'radius/check-username');
+		}
+
 		public function createAccount($data) {
 			$this->request($data, 'radius/add');
 		}
@@ -53,5 +57,13 @@
 
 		public function changeAccountPassword($data) {
 			$this->request($data, 'radius/change-password');
+		}
+
+		public function serverList($data) {
+			$this->request($data, 'servers');
+		}
+
+		public function configFile($data) {
+			$this->request($data, 'configurations');
 		}
 	}
