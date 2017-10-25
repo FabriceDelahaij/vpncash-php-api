@@ -2,7 +2,7 @@
 
 [![Build Status](https://scrutinizer-ci.com/g/FabriceDelahaij/vpncash-php-api/badges/build.png?b=master)](https://scrutinizer-ci.com/g/FabriceDelahaij/vpncash-php-api/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/FabriceDelahaij/vpncash-php-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/FabriceDelahaij/vpncash-php-api/?branch=master)
-[![StyleCI](https://styleci.io/repos/108042082/shield?branch=master)](https://styleci.io/repos/108042082)
+[![StyleCI](https://styleci.io/repos/108218190/shield?branch=master)](https://styleci.io/repos/108218190)
 
 ## Requirements ##
 To use the VPNCash API client, the following things are required:
