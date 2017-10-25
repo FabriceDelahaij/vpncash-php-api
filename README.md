@@ -15,15 +15,15 @@ To use the VPNCash API client, the following things are required:
 + PHP cURL extension
 
 ## Install Composer
-Install the VPNCash API client is to require it with Composer.
+Install the VPNCash API client is to require it with [Composer](http://getcomposer.org/doc/00-intro.md).
 
-$ composer require fabricedelahaij/vpncash-php-api:1.0.*
+    $ composer require fabricedelahaij/vpncash-php-api:1.0.*
 
-{
-    "require": {
-        "fabricedelahaij/vpncash-php-api": "1.0.*"
+    {
+        "require": {
+            "fabricedelahaij/vpncash-php-api": "1.0.*"
+        }
     }
-}
 
 
 ### Getting started ###
