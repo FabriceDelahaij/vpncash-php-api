@@ -1,5 +1,5 @@
 {
-    "name": "VPNCash/VPNCash-PHP-API",
+    "name": "VPNCash/vpncash-php-api",
     "description": "VPNCash PHP API Client",
     "homepage": "https://github.com/FabriceDelahaij/vpncash-php-api",
     "license": "BSD-2-Clause",
@@ -12,6 +12,6 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.7.0"
     }
 }

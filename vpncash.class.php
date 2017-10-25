@@ -1,12 +1,16 @@
 <?php
+
 	/*
-	*	@Name		VPNCash PHP API Client
+	*	VPNCash PHP API Client
+	*
 	*	@File		vpncash.class.php
 	*	@Author		Extreemhost <admin@extreemhost.nl> (2017)
 	*	@License	Berkeley Software Distribution License (BSD-License 2) http://www.opensource.org/licenses/bsd-license.php
 	*/
 
-	class VPNCash
+	namespace VPNCash;
+
+	class Client
 	{
 		protected static $APIURL = 'https://api.vpncash.com/';
 
