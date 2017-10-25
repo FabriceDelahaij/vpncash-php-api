@@ -1,8 +1,15 @@
 {
     "name": "fabricedelahaij/vpncash-php-api",
-    "description": "VPNCash PHP API Client",
+    "version": "v1.0",
+    "description": "VPNCash API client library for PHP.",
     "homepage": "https://github.com/FabriceDelahaij/vpncash-php-api",
     "license": "BSD-2-Clause",
+    "keywords": [
+            "api",
+            "vpncash",
+            "api client",
+            "servoce"
+    ],
     "authors": [
         {
             "name": "Extreemhost",
