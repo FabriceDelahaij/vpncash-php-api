@@ -17,7 +17,7 @@
 		public function __construct() {
 		}
 
-		public static function Request($data, $select) {
+		public static function request($data, $select) {
 			$request = curl_init();
 			$headers = array(
 				'Content-Type: application/x-www-form-urlencoded'
@@ -32,7 +32,7 @@
 			curl_setopt($request, CURLOPT_HEADER, false);
 			$result = curl_exec($request);
 			if ($result == FALSE) {
-				throw new Exception('<p>Curl failed: '.curl_error($request).'</p>');
+				throw new VPNCash\Exception('<p>Curl failed: '.curl_error($request).'</p>');
 			}
 			// Close connection
 			curl_close($request);
@@ -41,18 +41,18 @@
 		}
 
 		public function createAccount($data) {
-			$this->Request($data, 'radius/add');
+			$this->request($data, 'radius/add');
 		}
 
 		public function enableAccount($data) {
-			$this->Request($data, 'radius/enabled');
+			$this->request($data, 'radius/enabled');
 		}
 
 		public function disableAccount($data) {
-			$this->Request($data, 'radius/disabled');
+			$this->request($data, 'radius/disabled');
 		}
 
 		public function changeAccountPassword($data) {
-			$this->Request($data, 'radius/change-password');
+			$this->request($data, 'radius/change-password');
 		}
 	}
