@@ -2,4 +2,9 @@
 	<logging>
 		<log type="coverage-clover" target="clover.xml"/>
 	</logging>
+	<filter>
+		<blacklist>
+			<directory>./vendor/</directory>
+		</blacklist>
+	</filter>
 </phpunit>
