@@ -29,7 +29,7 @@ Install the VPNCash API client is to require it with [Composer](http://getcompos
 Required include class, If you're using Composer, you can skip this step.
 
 ```php
-	require_once('VPNCash/vpncash.class.php');
+require_once('VPNCash/vpncash.class.php');
 ```
 
 
