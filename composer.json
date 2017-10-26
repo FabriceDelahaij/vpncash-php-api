@@ -22,5 +22,13 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-openssl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^3.7 || ^4.8 || ^5.4"
+    },
+    "autoload": {
+       "psr-0": {
+            "VPNCash": "src/"
+        }
     }
 }
