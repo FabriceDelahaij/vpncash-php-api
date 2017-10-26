@@ -6,12 +6,16 @@
 	*	@File		vpncash.class.php
 	*	@Author		Extreemhost <admin@extreemhost.nl> (2017)
 	*	@License	Berkeley Software Distribution License (BSD-License 2) http://www.opensource.org/licenses/bsd-license.php
+	*	@Link		https://vpncash.com
 	*/
 
 
-	class Client
+	class VPNCash_Client
 	{
-		protected static $APIURL = 'https://api.vpncash.com/';
+		const CLIENT_VERSION = '1.0';
+		const API_ENDPOINT = 'https://api.vpncash.com/';
+
+		protected static $APIURL = self::API_ENDPOINT;
 
 		public function __construct() {
 		}

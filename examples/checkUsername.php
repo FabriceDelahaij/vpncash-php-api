@@ -1,9 +1,9 @@
 <?php
-require_once('./vpncash.class.php');
+require_once('vendor/autoload.php');
 
 try
 {
-	$api = new Client();
+	$api = new VPNCash_Client();
 	$data = [
 		'vpn_username' => ''
 	];
