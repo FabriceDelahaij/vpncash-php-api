@@ -10,8 +10,7 @@ try
 
 	$api->checkUsername($data);
 
-}
-catch (Exception $e)
+} catch (Exception $e)
 {
 	echo 'API call failed: '.htmlspecialchars($e->getMessage());
 }
