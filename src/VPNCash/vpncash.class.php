@@ -9,7 +9,6 @@
 	*	@Link		https://vpncash.com
 	*/
 
-
 	class VPNCash_Client
 	{
 		const CLIENT_VERSION = '1.0';
@@ -43,31 +42,38 @@
 			print $result;
 		}
 
-		public function checkUsername($data) {
+		public function checkUsername($data)
+		{
 			$this->request($data, 'radius/check-username');
 		}
 
-		public function createAccount($data) {
+		public function createAccount($data)
+		{
 			$this->request($data, 'radius/add');
 		}
 
-		public function enableAccount($data) {
+		public function enableAccount($data)
+		{
 			$this->request($data, 'radius/enabled');
 		}
 
-		public function disableAccount($data) {
+		public function disableAccount($data)
+		{
 			$this->request($data, 'radius/disabled');
 		}
 
-		public function changeAccountPassword($data) {
+		public function changeAccountPassword($data)
+		{
 			$this->request($data, 'radius/change-password');
 		}
 
-		public function serverList($data) {
+		public function serverList($data)
+		{
 			$this->request($data, 'servers');
 		}
 
-		public function configFile($data) {
+		public function configFile($data)
+		{
 			$this->request($data, 'configurations');
 		}
 	}
