@@ -16,22 +16,26 @@ To use the VPNCash API client, the following things are required:
 ## Install Composer
 Install the VPNCash API client is to require it with [Composer](http://getcomposer.org/doc/00-intro.md).
 
-    $ composer require fabricedelahaij/vpncash-php-api:1.0.*
+    $ composer require fabricedelahaij/vpncash-php-api:master
 
     {
         "require": {
-            "fabricedelahaij/vpncash-php-api": "1.0.*"
+            "fabricedelahaij/vpncash-php-api": "master"
         }
     }
 
 
-### Getting started ###
+### Getting started
+Required include class, If you're using Composer, you can skip this step.
 
 ```php
+	require_once('VPNCash/vpncash.class.php');
+```
 
-require_once('vpncash.class.php');
 
-$api = new VPNCash();
+```php
+// Create VPN Account
+$api = new VPNCash_Client();
 $data = [
 	'access_token' => 'ID-TOKEN',
 	'vpn_username' => 'test123',
@@ -41,7 +45,7 @@ echo $api->createAccount($data);
 
 
 // Disable VPN Account
-$api = new VPNCash();
+$api = new VPNCash_Client();
 $data = [
 	'access_token' => 'ID-TOKEN',
 	'vpn_username' => 'test123'
@@ -50,7 +54,7 @@ echo $api->disableAccount($data);
 
 
 // Disable VPN Account
-$api = new VPNCash();
+$api = new VPNCash_Client();
 $data = [
 	'access_token' => 'ID-TOKEN',
 	'vpn_username' => 'test123'
@@ -58,20 +62,21 @@ $data = [
 echo $api->enableAccount($data);
 
 // Change account password
-$api = new VPNCash();
+$api = new VPNCash_Client();
 $data = [
 	'access_token' => 'ID-TOKEN',
 	'vpn_username' => 'test123'
 	'vpn_password' => '123546'
 ];
 echo $api->changeAccountPassword($data);
+
 ```
 
-## API documentation ##
+## API documentation
 If you wish to learn more about our API, please visit the [API Documentation](http://docs.vpnapi21.apiary.io).
 
-## License ##
+## License
 [BSD (Berkeley Software Distribution) License](https://opensource.org/licenses/bsd-license.php). Copyright (c) 2017, Extreemhost.
 
-## Support ##
-Contact: [www.extreemhost.nl](https://extreemhost.nl) - info@extreemhost - +31 316-23 40 40
+## Support
+Contact: [www.extreemhost.nl](https://extreemhost.nl) - support@extreemhost.nl - +31 316-23 40 40
