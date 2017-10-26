@@ -16,10 +16,12 @@
 
 		protected static $APIURL = self::API_ENDPOINT;
 
-		public function __construct() {
+		public function __construct()
+		{
 		}
 
-		public static function request($data, $select) {
+		public static function request($data, $select)
+		{
 			$request = curl_init();
 			$headers = array(
 				'Content-Type: application/x-www-form-urlencoded'
