@@ -35,7 +35,7 @@
             curl_setopt($request, CURLOPT_SSL_VERIFYHOST, false);
             curl_setopt($request, CURLOPT_HEADER, false);
             $result = curl_exec($request);
-            if ($result == false) {
+            if ($result === false) {
                 throw new Exception('<p>Curl failed: '.curl_error($request).'</p>');
             }
             // Close connection
