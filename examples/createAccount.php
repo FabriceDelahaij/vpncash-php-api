@@ -7,7 +7,7 @@ try {
 	$data = [
 		'access_token' => 'ID-TOKEN',
 		'vpn_username' => 'test123',
-		'vpn_password' => '123546
+		'vpn_password' => '123546'
 	];
 	$api->createAccount($data);
 } catch (Exception $e) {
