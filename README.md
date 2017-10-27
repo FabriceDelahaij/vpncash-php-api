@@ -53,7 +53,7 @@ $data = [
 echo $api->disableAccount($data);
 
 
-// Disable VPN Account
+// Enable VPN Account
 $api = new VPNCash_Client();
 $data = [
 	'access_token' => 'ID-TOKEN',
