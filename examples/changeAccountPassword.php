@@ -1,6 +1,6 @@
 <?php
 
-require_once 'vendor/autoload.php';
+require_once(dirname(__FILE__).'/../src/VPNCash/vpncash.class.php');
 
 try {
 	$api = new VPNCash_Client();
